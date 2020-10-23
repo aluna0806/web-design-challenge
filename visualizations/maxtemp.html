@@ -4,59 +4,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-  <title>Maximum Temperature Plot - Web Visualizations</title>
+  <title>Humidity Plot - Web Visualizations</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets\css\style.css">
+  <link rel="stylesheet" href="Resources\css\style.css">
 </head>
 
 <body>
 <!--Navigation bar-->
 <div class="navigation">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand"  href="index.html">Web Visualizations</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="learnhow.html">Learn How</a>
-          </li>
-          <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Plots
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item active" href="maxtemp.html">Max Temperature</a>
-                  <a class="dropdown-item" href="humidity.html">Humidity</a>
-                  <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                  <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
-              </div>
-          </li>  
-          <li class="nav-item">
-            <a class="nav-link" href="comparison.html">Comparison</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="data.html">Data</a>
-          </li>
-        </ul>
-      </div>
-  </nav>
-</div>
-
-<!--Page content-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand"  href="index.html">Web Visualizations</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="learnhow.html">Learn How</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plots
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
+                    <a class="dropdown-item active" href="humidity.html">Humidity</a>
+                    <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                    <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                </div>
+            </li>  
+            <li class="nav-item">
+              <a class="nav-link" href="comparison.html">Comparison</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="data.html">Data</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+  </div>
+  
+  <!--Page content-->
 <!--Plot image with description-->
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-8 col-sm-12">
       <div class="box">
         <div class="header">
-          <h3 class="title">Maximum Temperature Plot</h3>
+          <h3 class="title">Temperature Plot</h3>
           <hr>
         </div>
         <div class="content">
-                <img src="assets/images/Latitude vs Temperature on 2020-06-20.png" alt="Latitude vs Max Temp" style="width:100%">
-                <p>As expected, the temperature is significantly warmer closer to the equator (0 degree latitude).
+                <img src="Resources/images/F1" alt="Latitude vs Temperature" style="width:100%">
+                <p>This plot maps cities' temperature against their latitude. Cities selected randomly.
+                </p>
+                <p>As expected, there is a direct correlation between temperature and latitude. The closer to the equator, the hotter the temperature.
                 </p>
         </div>
       </div>
@@ -75,26 +77,26 @@
       <div>
         <div class="row padding">
           <div class="col-6">
-            <div class="border border-success">
            <a href="maxtemp.html">
-            <img class="panel" src="assets/images/Latitude vs Temperature on 2020-06-20.png" alt="Max Temperature Plot" style="width:100%">
+            <img class="panel" src="Resources/images/Fig1" alt="Max Temperature Plot" style="width:100%">
           </a>
-            </div>
           </div>
           <div class="col-6">
           <a href="windspeed.html">
-            <img class="panel" src="assets/images/Latitude vs Windspeed on 2020-06-20.png" alt="Wind Speed Plot" style="width:100%">
+            <img class="panel" src="Resources/images/Fig4" alt="Wind Speed Plot" style="width:100%">
           </a>
           </div>
           <div class="col-6">
           <a href="humidity.html">
-            <img class="panel" src="assets/images/Latitude vs Humidity on 2020-06-20.png" alt="Humidity Plot" style="width:100%">
+            <img class="panel" src="Resources/images/Fig2" alt="Humidity Plot" style="width:100%">
           </a>
           </div>
           <div class="col-6">
+            <div class="border border-success">
           <a href="cloudiness.html">
-            <img class="panel" src="assets/images/Latitude vs Cloudiness on 2020-06-20.png" alt="Cloudiness Plot" style="width:100%">
+            <img class="panel" src="Resources/images/Fig3" alt="Cloudiness Plot" style="width:100%">
           </a>
+            </div>
           </div>
         </div>
       </div>
@@ -106,7 +108,7 @@
 </div>
 </div>
 </div>
-  
+
 </body>
   
-  </html>
+</html>
